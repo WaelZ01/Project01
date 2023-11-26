@@ -18,74 +18,109 @@
   <div class="pageContaineer">
 <div class="gameControl">
   <h1>Memorey Card Game</h1>
-  <div class="stats">
-  <div class="moves">0 Moves</div>
-  <div class="timer">Time : 0s</div>  
+
+  
+  <div class="playerContainer">
+
+  <div class="firstP">
+    <h2>Player01 Score:</h2>
+    <h2 id="player01">0</h2>
   </div>
- <a href="#" class="button">RESTART</a>
+
+  <div class="seconedP">
+    <h2>Player02 Score:</h2>
+    <h2 id="player02"> 0</h2>
+  </div>
+
+</div>
+
+ <a href="#" class="button">PLAY AGAIN</a>
 </div> 
 
+
     <section class="gameBoard">
-      <div class="card">
-        <img class="frontFace" src="/jsimages/angular.svg">
-        <img class="backFace" src="/Jsimages/js-badge.svg">
+      <div class="card" id='c1' data-cards="angular">
+        <img class="frontFace" src="/jsimages/angular.svg"/>
+        <img class="backFace" src="/Jsimages/js-badge.svg"/>
       </div>
 
-      <div class="card">
-        <img class="frontFace" src="/jsimages/angular.svg">
-        <img class="backFace" src="/Jsimages/js-badge.svg">
+      <div class="card" id='c2' data-cards="angular">
+        <img class="frontFace" src="/jsimages/angular.svg"/>
+        <img class="backFace" src="/Jsimages/js-badge.svg"/>
       </div>
       
 
-      <div class="card">
-        <img class="frontFace" src="/jsimages/aurelia.svg">
-        <img class="backFace" src="/Jsimages/js-badge.svg">
+      <div class="card" id='c3' data-cards="aurelia">
+        <img class="frontFace" src="/jsimages/aurelia.svg"/>
+        <img class="backFace" src="/Jsimages/js-badge.svg"/>
       </div>
 
-      <div class="card">
-        <img class="frontFace" src="/jsimages/aurelia.svg">
-        <img class="backFace" src="/Jsimages/js-badge.svg">
+      <div class="card" id='c4' data-cards="aurelia">
+        <img class="frontFace" src="/jsimages/aurelia.svg"/>
+        <img class="backFace" src="/Jsimages/js-badge.svg"/>
       </div>
 
-      <div class="card">
-        <img class="frontFace" src="/jsimages/backbone.svg">
-        <img class="backFace" src="/Jsimages/js-badge.svg">
+      <div class="card" id='c5' data-cards="backbone">
+        <img class="frontFace" src="/jsimages/backbone.svg"/>
+        <img class="backFace" src="/Jsimages/js-badge.svg"/>
       </div>
 
-      <div class="card">
-        <img class="frontFace" src="/jsimages/backbone.svg">
-        <img class="backFace" src="/Jsimages/js-badge.svg">
+      <div class="card" id='c6' data-cards="backbone">
+        <img class="frontFace" src="/jsimages/backbone.svg"/>
+        <img class="backFace" src="/Jsimages/js-badge.svg"/>
       </div>
 
-      <div class="card">
-        <img class="frontFace" src="/jsimages/ember.svg">
-        <img class="backFace" src="/Jsimages/js-badge.svg">
+      <div class="card" id='c7' data-cards="ember">
+        <img class="frontFace" src="/jsimages/ember.svg"/>
+        <img class="backFace" src="/Jsimages/js-badge.svg"/>
       </div>
 
-      <div class="card">
-        <img class="frontFace" src="/jsimages/ember.svg">
-        <img class="backFace" src="/Jsimages/js-badge.svg">
+      <div class="card" id='c8' data-cards="ember">
+        <img class="frontFace" src="/jsimages/ember.svg"/>
+        <img class="backFace" src="/Jsimages/js-badge.svg"/>
       </div>
 
-      <div class="card">
-        <img class="frontFace" src="/jsimages/react.svg">
-        <img class="backFace" src="/Jsimages/js-badge.svg">
+      <div class="card" id='c9' data-cards="react">
+        <img class="frontFace" src="/jsimages/react.svg"/>
+        <img class="backFace" src="/Jsimages/js-badge.svg"/>
       </div>
 
-      <div class="card">
-        <img class="frontFace" src="/jsimages/react.svg">
-        <img class="backFace" src="/Jsimages/js-badge.svg">
+      <div class="card" id='c10' data-cards="react">
+        <img class="frontFace" src="/jsimages/react.svg"/>
+        <img class="backFace" src="/Jsimages/js-badge.svg"/>
       </div>
 
-      <div class="card">
-        <img class="frontFace" src="/jsimages/vue.svg">
-        <img class="backFace" src="/Jsimages/js-badge.svg">
+      <div class="card" id='c11' data-cards="vue">
+        <img class="frontFace" src="/jsimages/vue.svg"/>
+        <img class="backFace" src="/Jsimages/js-badge.svg"/>
       </div>
 
-      <div class="card">
-        <img class="frontFace" src="/jsimages/vue.svg">
-        <img class="backFace" src="/Jsimages/js-badge.svg">
+      <div class="card" id='c12' data-cards="vue">
+        <img class="frontFace" src="/jsimages/vue.svg"/>
+        <img class="backFace" src="/Jsimages/js-badge.svg"/>
       </div>
+
+      <div class="card" id='c13' data-cards="cPlusPlus">
+        <img class="frontFace" src="/Jsimages/kisspng-the-c-programming-language-computer-icons-comput-programming-5acadc2dbc1606.4623884115232440777704-removebg-preview.png"/>
+        <img class="backFace" src="/Jsimages/js-badge.svg"/>
+      </div>
+
+      <div class="card" id='c14' data-cards="cPlusPlus">
+        <img class="frontFace" src="/Jsimages/kisspng-the-c-programming-language-computer-icons-comput-programming-5acadc2dbc1606.4623884115232440777704-removebg-preview.png"/>
+        <img class="backFace" src="/Jsimages/js-badge.svg"/>
+      </div>
+
+      <div class="card" id='c15' data-cards="java">
+        <img class="frontFace" src="/Jsimages/b82aa7ac3f736dd78570dd3fa3fa9e24-java-programming-language-icon-removebg-preview.png"/>
+        <img class="backFace" src="/Jsimages/js-badge.svg"/>
+      </div>
+
+      <div class="card" id='c16' data-cards="java">
+        <img class="frontFace" src="/Jsimages/b82aa7ac3f736dd78570dd3fa3fa9e24-java-programming-language-icon-removebg-preview.png"/>
+        <img class="backFace" src="/Jsimages/js-badge.svg"/>
+      </div>
+
+      
     </section>
     
      </div>

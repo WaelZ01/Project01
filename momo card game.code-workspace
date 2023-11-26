@@ -8,6 +8,7 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "momo card game"
+		"liveServer.settings.multiRootWorkspaceName": "momo card game",
+		"liveServer.settings.port": 5501
 	}
 }

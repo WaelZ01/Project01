@@ -5,39 +5,38 @@
 }
 
 .pageContaineer{
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
 }
 
-.stats{
- display: grid;
- grid-template-columns: 1fr 1fr;
- background-color: #6f00fc;
- padding: 20px;
- color: aliceblue;
- font-size: 30px;
- border-radius:10px;
- margin-bottom: 70px;
- margin-top: 50px;
+.playerContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #7591FF;
+    text-align: center;
+    padding: 50px;
+    margin:50px;
+    border-radius: 50px;
+    gap: 2px;
 }
 
 .gameControl{
     padding: 40px;
     border-radius:15px; 
-    background-color:#fc7900;
+    background-color:rgb(0, 0, 0) 86%;
     font-size: 24px;
     text-align: center;
+    color: white;
+    height: 571px;
 }
 
 body {
-height: 700px;
-background: linear-gradient(325deg,  #6f00fc 0%,#fc7900 50%,#fcc500b9 100%);
+background: linear-gradient(90deg, rgba(168,75,255,1) 23%, rgba(9,223,176,1) 62%, rgba(0,255,234,1) 91%);
+background-repeat:no-repeat ;
+background-attachment: fixed;
 display: flex;
 float: left;
-padding-left: 90px;
 }
 
 img{
@@ -46,27 +45,32 @@ img{
 
 .gameBoard {
 display: flex;
-flex-wrap:wrap;
-margin-left:100%;
-padding-top: 10px;
-height:640px;
-width:640px;
+flex-wrap: wrap;
+margin-left: 100%;
+padding-bottom: 150px;
+height: 600px;
+width: 600px;
 margin: auto;
 gap: 5px;
-padding-left: 70px;
-
+perspective: 1000px;
 }
 
 .card {
     width:calc(25% - 10px);
     height:calc(33.333% - 10px);
     position: relative;
-    transform: scale(1);
+    transform: scale(1); 
+    transform-style:preserve-3d ;
+    transition: transform .5s;
 }
 
-.card:active {
-  transform: scale(0.90);
-  transition: transform .2s;
+.card:active{
+    transform: scale(.97);
+    transition: transform .3s;
+}
+
+.card.flip{
+transform: rotateY(180deg);
 }
 
 .backFace,
@@ -75,13 +79,16 @@ position: absolute;
 padding: 20px;
 height:100%;
 width:100%;
-/* backface-visibility: hidden; */
+backface-visibility: hidden;
 border-radius: 5px;
-background-color: #6f00fc;
-
+background-color: #4A54E6;
 }
 
-.button{
+.frontFace{
+    transform: rotateY(180deg);
+}
+
+.button{ 
     font-size:30px;
     font-family:'Times New Roman';
     padding: 20px;
@@ -99,8 +106,4 @@ background-color: #6f00fc;
 
 .button:hover{
     background: #b34332
-}
-.flip{
-    z-index:+1;
-
 }
