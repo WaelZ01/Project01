@@ -7,7 +7,7 @@ let currentPlayer = 'player01';
 let playerOneScore = 0;
 let playerTwoScore = 0;
 
-
+// 
 //flip card action
 function flipCard(){
         count++;
