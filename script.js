@@ -41,7 +41,7 @@ if(count > 2){
         }
         // if we check matching never swich
         function checkMatching(){
-                if(card1.dataset.cards === card2.dataset.cards && card1.id !== card2.id){//to get the data typr from html
+                if(card1.dataset.cards === card2.dataset.cards && card1.id !== card2.id){//to get the data type from html
                         // if player 1, add to player 1 score
                         if(currentPlayer == 'player01'){
                                 playerOneScore++;
@@ -52,7 +52,7 @@ if(count > 2){
                         else{
                                 playerTwoScore++;
                         }
-                        if(playerOneScore + playerTwoScore == 8){
+                        if(playerOneScore + playerTwoScore == 7){
                                 checkForWinner();
                         }
 
@@ -90,8 +90,9 @@ if(count > 2){
 //give a random index order for random array
         let index = Math.floor(Math.random() * randomOrder.length - 1);
         card.style.order = randomOrder[index];
-                                                 })
-                                                        };
+                        })
+                                };
+
 
 // when the user clicks on the RESTART button the page will reload  
 //once clicked on restart button the page refreshs and shuffles the cards
